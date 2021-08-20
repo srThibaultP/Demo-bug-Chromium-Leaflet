@@ -1,0 +1,268 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : Demo_bug_Chromium_Leaflet
+ major_version : 26
+ minor_version : 0
+ type : 2
+ description : ""
+ subtype : 0
+window :
+ name : Demo_bug_Chromium_Leaflet
+ identifier : 0x211f459d014be7d7
+ internal_properties : BgAAAAYAAAC67mqV3uTPIPKBfweB/RM9X/BgtTre0Oxj/U3ptt1x4TlO68+9BfSjNzEVtVzlymxI+w9+KoDnFT/GRgCO8lwPj3cqM/SilYaaQVvBQG8g+2z2fDWLIGamRAQ0TZ1UbcLdTKMpMsrV8xW9zn10VxB9jwBSsp7bCaPZfARsaOee53c+W8FJEbfFlQVXEceChjMMJb0GjtquCEr2QNuQ4K02jffM1h3ak/PTkUIZeFHr2hnwtUXdogX1Y0LQlh8LC/06r23nbyE1GrsLwQ3mZC8JeDdTe0U7lu6DPA8upYiu82dttFqeAFbDsA7lPP3aKZ+r0r3CuqgGviYfSbcOycSvGkBpWSDH3YcI/y/H5TgdWp4W/704GhKtBfEM/cDvMg04tKzgOUn/nnftpMMvFDEPg1ALpEMglJlf+f20iHD7slIHlYAVAMiYiVwZu7xz2GSGEJ6ZyF8WRwJK5/DkDitEB5QsK6fKCDDBMtKWTfhaK2lkkQ5tPogNlEqeMhU2U8L7vj+ZQWiFlEL43nlUz3lwECq474STbNfOEHgQwTQFrAXgvXq9rnpxom5T7LGCv19VkBmK4Q0nSqniYkg+DR73J57tPr/l5fnW0vZvrUEQAtEn2F1/JljMXTlHOGV3BNf3hv3OIEu8FjpzLaML9CHWR76/GNAD1bs7khA1+tPE/6QKVCqRLDRlASjb2EgRT/6Qt7c=
+ controls :
+  -
+    name : HTML1
+    identifier : 0x211f45a701710f64
+    internal_properties : BgAAAAYAAADuG8xc7fLvoUuA79z9xYsXFAPktspJgD3LlVbDUWexSr8Y/d7AO7FvYPvukABgoanSpyY1cdZ8ff1P8dOWVeEMPtluh8Z+jWjdbyUKao3w0r6FSldqtiru1Kv6XTOgIXKHZeYGgzicAYKEriSe6jVQli/HJAOz5ahHgDepNYGcLNfwehPXttd43Vo7l2nktQhtInfNF9YGh9jsPgSveDZ9KVBH8uWIzTfiQaYFYGhTiA/LVzvBX5KWSEG3kCJIDXqv1PkG0wOVmBVEjre2klejBp8p3+TKPvlczSDXlUUIzSa6DDjziaJdpsHJnn192P2Vfy+odQ6dA7AVRV4poxUCIauTBrFniAKrIn+vzF6rUD9NyLsWzFRoHnpDPjhU712KJy4RNbi5633xU+Fz8BnPJFunHeqolZRqEgQCAFmHCLlpnsmgasLh88Kdnr5632A=
+    type : 23
+    code_elements :
+     type_code : 36
+     p_codes :
+      -
+        code : |1+
+         PROCÉDURE ClicLien(sUrl est chaine, bDansNouvelleFenetre est un booléen, sDestination est une chaine)
+         
+         RENVOYER Vrai
+        type : 266
+      -
+        code : |1+
+         PROCEDURE ChangePage( sUrl est chaine, sDestination est une chaine )
+         
+         RENVOYER Vrai
+        type : 290
+      -
+        code : |1+
+         PROCEDURE ChargementRessources( sUrl est chaine, nType est entier )
+         // nType donne le type de ressource à télécharger
+         // exemple : typehtmlResImage, typehtmlResScript, typehtmlResCss, typehtmlResXMLHttpRequest, typehtmlAutre
+         // ATTENTION : ce traitement est appelé depuis un thread secondaire
+         
+         RENVOYER Vrai
+        type : 289
+      -
+        code : |1+
+         PROCEDURE ClicDroitLien( sUrl est chaine )
+        type : 291
+  -
+    name : Bouton1
+    identifier : 0x211f45cf01c3aac9
+    internal_properties : BgAAAAYAAACGbW0D4URsUfpVL0NPwNiCVNTCuZ0bhQd66OIwb4YyQFlaB32fehIrBerTkxiMScrftw9mvCvn6i4RbRiyFhDK5Hf4hcaSSybJnMNIFBzqIuZl2AI71AgchPqbBXfkHqlcnQj9TnfLJQMvv9HwjjgnMLKZbyepEqtIYIqChesw2AvBtnvHTsyh+F/6hpC7tHRIeiK8ak08jhe+Bysal0IPo0S2F2eOCXY7aNmo2S+6+zR7ejSV1DNTVEIm3B87Mh262OYfzfU7BFEGBIOaGn6wbr4AAEHb5JbvkRdivXKDS/hukZkB7MkFgqXOh1npO6m09BzxlwCPU5V08uceWaPaK2jxFqMLEO87fy76byKNi1wOilUjZL8QYLgAFEjSGi8BpM3vJtmR8/3z4+f0jcQ8c1RxogF59kOx1amubX9IRucHhiqMI34K2HRYyzLGJYA3oWzybJ+nRw3dQxQhyUf8QLlfgfBJ9C/MB/GWDCHtQQVrA3LSSjVBTS/shBL1nZoVS/VzG4XQcd4IgGSJSu9vdsMG1triNff+w88tQQlPsuoLt9MN2vXRElhb2TIAtzs8693Z6+ug21BZTZQnF3fkj0jcC4EkuaX84MgIHl7PJHQasLgmlavyeiHpfAAtyBoGaoSsdbT3gzSb+wlBMR3kMiNyyCiTFf6JPTLyfljlbFv22JRDjR1B7BVQ8V+opIJHbakVJcOEjhO7qoZ8WnDIFROr9PZdNJefW5wgHDkqWa6Zj8dHNToe63vX8EkXLLvuiDlB9XLkNT7q
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         sTmpHTM		est un Buffer 
+         i est un entier
+         
+         sTmpHTM=[
+         <html>
+         <head>
+         	<title>%1</title>
+         	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"/>
+         	<link rel="stylesheet" href="https://unpkg.com/leaflet-search@2.9.11/dist/leaflet-search.min.css" />
+         	<link rel="stylesheet" href="https://unpkg.com/leaflet-geosearch@3.3.2/dist/geosearch.css" />
+         	<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css" />
+         	<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css" />
+         	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+         	<link rel="stylesheet" href="https://unpkg.com/leaflet.awesome-markers@2.0.5/dist/leaflet.awesome-markers.css" />
+         	
+         	<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"></script>
+         	<script src="https://unpkg.com/leaflet-search@2.9.11/dist/leaflet-search.min.js"></script>
+         	<script src="https://unpkg.com/leaflet-geosearch@3.3.2/dist/geosearch.umd.js"></script>
+         	<script src="https://kit.fontawesome.com/97e81859e3.js" crossorigin="anonymous"></script>
+         	<script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
+         	<script src="https://unpkg.com/leaflet.featuregroup.subgroup@1.0.2/dist/leaflet.featuregroup.subgroup.js"></script>
+         	<script src="https://unpkg.com/leaflet.awesome-markers@2.0.5/dist/leaflet.awesome-markers.min.js"></script>
+         	
+         	
+         	<style>
+         		.leaflet-control-search .search-button {
+         			display: block;
+         			float: left;
+         			width: 30px;
+         			height: 30px;
+         			background: url(https://github.com/RabaudSI/cache/raw/master/Carte-clients/search-icon.png) no-repeat 4px 4px #fff;
+         			border-radius: 4px
+         		}
+         
+         		.leaflet-control-search .search-button:hover {
+         			background: url(https://github.com/RabaudSI/cache/raw/master/Carte-clients/search-icon.png) no-repeat 4px -20px #fafafa
+         		}
+         	</style>
+         </head>
+         
+         <body>
+         	<!--<div id="mapid" style="width: %2; height: %3px;"></div>DEV-->
+         	    <div id="mapid" style="width: 1900; height: 998px;"></div>
+         
+         	<script>
+         			//Création de localisation GPS random (mes positions GPS viennent d'une BDD)
+         			function getRandomLatLng(map) {
+         			var bounds = map.getBounds(),
+         				southWest = bounds.getSouthWest(),
+         				northEast = bounds.getNorthEast(),
+         				lngSpan = northEast.lng - southWest.lng,
+         				latSpan = northEast.lat - southWest.lat;
+         
+         			return new L.LatLng(
+         					southWest.lat + latSpan * Math.random(),
+         					southWest.lng + lngSpan * Math.random());
+         		}
+         		
+         		//Changement de valeurs par défaut pour les markers custom
+         		L.AwesomeMarkers.Icon.prototype.options.prefix = 'fa';
+         		L.AwesomeMarkers.Icon.prototype.options.icon = 'registered';
+         		
+         		//Définition des cartes
+         		var mbUrl    = 'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw';
+         		var carte  = L.tileLayer('https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {minZoom: 1, maxZoom: 18});
+         		var	satellite  = L.tileLayer(mbUrl, {id: 'mapbox/satellite-v9', tileSize: 512, zoomOffset: -1});
+         		
+         		//Création des groupes de markers
+         		var toutLesMarkers = L.markerClusterGroup({chunkedLoading: true});
+         		var Rabaud = L.featureGroup.subGroup(toutLesMarkers);
+         		var RAG = L.featureGroup.subGroup(toutLesMarkers);
+         		var RTP = L.featureGroup.subGroup(toutLesMarkers);
+         		var REV = L.featureGroup.subGroup(toutLesMarkers);
+         		var RAS = L.featureGroup.subGroup(toutLesMarkers);
+         		var myArray = [RAG, RTP, REV, RAS];
+         		
+         		
+         		//Initialisation de la carte
+         		var map = L.map('mapid', {center: [47.2663862, 1.8763715225], zoom: 8, layers: [carte]});
+         		
+         		//Définition des markers
+         		var RAGMarker 		= L.AwesomeMarkers.icon();
+         		var RTPMarker 		= L.AwesomeMarkers.icon({markerColor: 'orange'});
+         		var REVMarker 		= L.AwesomeMarkers.icon({markerColor: 'green'});
+         		var RASMarker 		= L.AwesomeMarkers.icon({markerColor: 'pink'});
+         		var ERRORMarker 	= L.AwesomeMarkers.icon({markerColor: 'white'});
+         		var myArray2 = [RAGMarker, RTPMarker, REVMarker, RASMarker];
+         		
+         		//Création d'un premier marker
+         		L.marker([46.73881, -1.10074], {
+         			title: "RABAUD",
+         			icon : L.AwesomeMarkers.icon({icon: 'home', markerColor: 'purple'})}).bindPopup("<b>RABAUD</b></br>Vous êtes ici</br><hr>Bellevue</br>85110 Sainte-Cécile</br>FRANCE").addTo(Rabaud);
+         
+         ]
+         
+         Tantque i<10000
+         	//Création des markers multiples. Il est possible de faire marcher la carte avec moins de markers (ex. 10). Elle est normalement alimenté avec une BDD avec 8000+ positions GPS.
+         	sTmpHTM=sTmpHTM+[
+         		randomItem = myArray[Math.floor(Math.random()*myArray.length)];
+         		randomItem2 = myArray2[Math.floor(Math.random()*myArray2.length)];
+         		L.marker(getRandomLatLng(map), {title: 'Un long titre ' + randomItem, icon: randomItem2}).bindPopup('<b>Une très longue description ' + randomItem + '</b>%8').addTo(randomItem);
+         		
+         	]
+         	i++
+         FIN
+         
+         sTmpHTM=sTmpHTM+[
+         		//Définition des cartes
+         		var baseLayers = {
+         			"Carte": carte,
+         			"Satellite": satellite
+         		};
+         		
+         		//Création d'un groupe pour permettre la recherche des markers dans la barre de recherche à gauche
+         		var RechercheMarkers = L.featureGroup([Rabaud, RAG, RTP, REV, RAS]);
+         		//Définition des groupes
+         		var Markers = {
+         			'<a style="color:purple;">Rabaud</a>': Rabaud,
+         			'<a style="color:red;">RAG</a>': RAG,
+         			'<a style="color:orange;">RTP</a>': RTP,
+         			'<a style="color:green;">REV</a>': REV,
+         			'<a style="color:pink;">RAS</a>': RAS
+         			};
+         			
+         		//Création de la barre de recherche à gauche
+         		var rechercheClients = new L.Control.Search({
+         			layer			: RechercheMarkers,
+         			initial			: false,
+         			zoom			: 15,
+         			autoType		: true,
+         			delayType		: 400,
+         			textPlaceholder	: 'Rechercher un code/nom client',
+         			textErr			: 'Client introuvable',
+         			tooltipLimit	: 5,
+         			marker			: L.circle([0, 0])
+         		}).on('search:locationfound', function (e) {
+         				e.layer.openPopup();
+         			});
+         		
+         		//Création de la barre de recherche en haut
+         		var geocodageAdresse = new GeoSearch.GeoSearchControl({
+           			provider		: new GeoSearch.OpenStreetMapProvider(),
+           			style			: 'bar',
+           			searchLabel 	: 'Rechercher une adresse',
+           			notFoundMessage	: 'Adresse introuvable',
+                     marker          : {
+                         icon: L.AwesomeMarkers.icon({icon: 'car', markerColor: 'black'})
+         		}});
+         
+         		//Ajout des modules dans la carte
+         		map.addControl(rechercheClients);
+         		map.addControl(geocodageAdresse);
+         		toutLesMarkers.addTo(map);
+         		Rabaud.addTo(map);
+         		RAG.addTo(map);
+         		RTP.addTo(map);
+         		REV.addTo(map);
+         		RAS.addTo(map);
+         		L.control.layers(baseLayers, Markers, {collapsed:false}).addTo(map);
+         </script>
+         </body>
+         </html>
+         ] 
+         //Pour récupérer le code dans un fichier HTML
+         //logs		est une chaîne	= "C:\log\DebugCarte.html"
+         //IdFichier	est un entier
+         //IdFichier=fOuvre(logs, foCréationSiInexistant)
+         //fEcritLigne(IdFichier,sTmpHTM)
+         HTML1 = sTmpHTM
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : Libellé1
+    identifier : 0x211f502a02561efd
+    internal_properties : BgAAAAYAAAALkn/QKNZ+uUIp+AMFeJqQUcXZkBFqPId+bSj2PdmZkgGCiEBIjPmMJpBkJuHSpRa/jodu+Mre9jfRkEcPE7qJEr1vV727bUWzeBlY5FeF2Gdlt4zTDsEKz5S/lO48OisXK/lp2Ls4l2YoSRxkqp5dTR1rFIDnLp7MHeSbdigQ5oFARNHgNROYgJbgGu3DLlpN2SskbWzaPJCYWYm3LYi8KdcIlmu++iTcyC898w9jTnpoacUpYwutzW2pID7HyRmcoo2+LTqm8xTuLVk5Dncoz3acvOtjrrJQ1b5mYUnKgGyuZe3AEXPb5nFuxFjiE0/GGnGwpJw4QZ6CkXCdYxQ0nOafTuRgu7vxCtT5g4Iwd2dbh4e+JMVl0t4Zm06uhuTydWasSWnZ5FkC/LEd4ETg6IQwtNUcOcNwE4AvNGCpGIZ5y9bvOjkyimiHOwVF30gYP6QodefmCUrHFso/438vd6+PRQtByLyOrc7QRvwa/aiyhTyX0xKFMsPT8fg1belj88dlijsKqpd+jWxQBG+S+BkljrngyvUOmEcbjRwaY1iIInjF9dJkM/NfAnHz7a/isAXUsC9ga7TnZ1Bowa74hlKHCBPCE5z4xyex878DEG5BHaqhtgrnM9P0jx5q9QPhjHF+ofHQOiVXu1jQBnw=
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+ menu :
+  name : _Menu
+  identifier : 0x292573e513b5f221
+  internal_properties : BgAAAAYAAABd4biPtdLQOwfUFiqrit8H4xfGqKyz9t6VLxCUnNZRQiLPVs82PZNE+UVdKRzjizyeuKyRur85gNMUfqplpmtNDnQWQla9zo+GH9+1EfUJ6w17Dn/egD/gv+Hhywk8c9unIdzEp7EHgaAqD28w7Agveg4u19PBcKGZtQ==
+  options : []
+ languages :
+  - fr-FR
+ popup_menus : []
+ message_bar :
+  internal_properties : BgAAAAYAAAA67fgqjL+BlNW0l7RVb9QHekfVEUcR8SpB62EFBVueAPYoi1/j/aXUAO/gLLyCTVuQazFai314Ui0SG0rWW0oZm0BFICoRFAhcTeX8
+ code_elements :
+  type_code : 1
+  p_codes :
+   -
+     code : |1+
+      PROCEDURE MaFenêtre()
+   -
+     type : 230
+     enabled : false
+ code_parameters :
+  internal_properties : BgAAAAYAAAAwjDLmDSZ0H1P68nJIeNfqR9EvRjU/K+sVcM1T6rhVNr+VTV1mZ/rmoweYbFDZUhBGcv8UsxlDxVCOnb2U/SQOvlGWzNby3/w/V+ppSymxv+Vh
+  original_name : Modele1
+resources :
+ string_res :
+  identifier : 0x111f458d0003a8da
+  internal_properties : BgAAAAYAAAAa2Zm8J9E/zh+/WIrVvz1fER/So3PB0gjQuxc1xKQVWY4ZDm5lfg==
+custom_note :
+ internal_properties : BgAAAAYAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : BgAAAAYAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe
